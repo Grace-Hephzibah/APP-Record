@@ -2,6 +2,7 @@ import sqlite3
 # connect to a database
 conn = sqlite3.connect('test.db')
 print("Opened database successfully")
+conn.execute("DROP TABLE COMPANY")
 
 # To Create a table
 import sqlite3
